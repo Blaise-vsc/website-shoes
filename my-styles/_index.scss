@@ -1,0 +1,141 @@
+.presentation {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #fe674934, #1a1b20, #fe67495e);
+  position: relative;
+  background-size: cover;
+  .dividerTop {
+    width: 30vw;
+    height: 60vh;
+    background: $orange;
+    border-radius: 50%;
+    position: fixed;
+    right: -10%;
+    top: -20%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    z-index: 1;
+    @media (max-width: 480px) {
+      display: none;
+      width: 60vw;
+      height: 20vh;
+      border-radius: 50px;
+      background: linear-gradient(rgba(255, 255, 255, 0.156), rgb(0, 0, 0)),
+        url(../img/l-nike.png);
+      background-size: cover;
+      background-position: center center;
+
+      right: 5%;
+      top: 8%;
+    }
+  }
+
+  .dividerDown {
+    width: 30vw;
+    height: 60vh;
+    background: $orange;
+    position: fixed;
+    left: -10%;
+    bottom: -20%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+    z-index: 1;
+    @media (max-width: 480px) {
+      clip-path: polygon(0 40%, 100% 40%, 100% 80%, 20% 20%);
+      z-index: 1;
+    }
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.mainContainerIndex {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+  gap: 2%;
+  p {
+    font-size: 110%;
+  }
+  h1 {
+    font-size: 200%;
+    span {
+      color: $orange;
+    }
+  }
+  .shoes {
+    width: 79%;
+    padding-left: 10%;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    // height: 80%;
+    padding: 10px;
+    .shoes {
+      width: 89%;
+    }
+    h1 {
+      font-size: 240%;
+      span {
+        color: $orange;
+      }
+    }
+  }
+}
+
+.mainContainertheIajust {
+  @media (max-width: 480px) {
+    align-items: start;
+    justify-content: start;
+    padding: 0% 10%;
+    p {
+      font-size: 100%;
+      font-weight: bolder;
+    }
+  }
+}
+
+.thisDivIsHidenInBigScreen {
+  display: none;
+
+  @media (max-width: 480px) {
+    display: block;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 6%;
+    background-attachment: fixed;
+    div {
+      width: 20%;
+      height: 10%;
+      background: linear-gradient(tomato, white, tomato);
+      border-radius: 25px;
+      margin-left: 15%;
+    }
+
+    a {
+      padding: 4% 12%;
+      background: $orange;
+      border-radius: 20px;
+      button {
+        color: $text-color;
+        font-size: 120%;
+        background: none;
+        border: none;
+        font-weight: bolder;
+      }
+    }
+  }
+}

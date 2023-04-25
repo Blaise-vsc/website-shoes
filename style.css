@@ -1,0 +1,590 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #1a1b20;
+  color: #ccced0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.parent-container {
+  width: 100%;
+  height: 100%;
+  background: #1a1b20;
+  color: #ccced0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 10px 20px;
+}
+header .section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header .section-header p {
+  font-size: 100%;
+}
+header .section-header p span {
+  font-weight: bolder;
+}
+header .section-header .profile {
+  width: 15%;
+  border-radius: 50%;
+}
+header .sec-hder-b {
+  display: none;
+}
+header .sec-hder-b i {
+  font-size: 120%;
+}
+@media (max-width: 480px) {
+  header {
+    gap: 0px;
+    padding: 10px 5%;
+    justify-content: space-between;
+  }
+  header .sec-hder-a {
+    justify-content: start;
+    width: 70%;
+  }
+  header .sec-hder-b {
+    display: block;
+    justify-content: end;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  header .section-header .profile {
+    width: 30%;
+  }
+}
+
+.firstSectionContainingTheForm {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.firstSectionContainingTheForm i {
+  font-size: 120%;
+}
+.firstSectionContainingTheForm .sec-form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #232b36;
+  padding: 5% 15px;
+  border-radius: 10px;
+}
+.firstSectionContainingTheForm .sec-form form input {
+  border: none;
+  background: none;
+}
+.firstSectionContainingTheForm .equilisator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #232b36;
+  padding: 3% 15px;
+  border-radius: 10px;
+}
+@media (max-width: 480px) {
+  .firstSectionContainingTheForm {
+    width: 100vw;
+    padding: 0px 20px;
+  }
+}
+
+.secondSectionContainingTheForm {
+  width: 30%;
+  display: flex;
+  padding: 2% 0%;
+  justify-content: space-between;
+}
+.secondSectionContainingTheForm .SpecialOffer p,
+.secondSectionContainingTheForm .seeAll p {
+  font-weight: bolder;
+  font-size: 100%;
+}
+@media (max-width: 480px) {
+  .secondSectionContainingTheForm {
+    width: 100vw;
+    padding: 5% 5%;
+  }
+}
+
+.contain-object {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fe6849;
+  border-radius: 10px;
+}
+.contain-object .containerObject-div {
+  width: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.contain-object .containerObject-div .mainShoes {
+  width: 50%;
+}
+@media (max-width: 480px) {
+  .contain-object .containerObject-div .mainShoes {
+    width: 110%;
+  }
+}
+.contain-object .containing-img {
+  justify-content: start;
+  align-items: center;
+}
+.contain-object .containing-text {
+  justify-content: center;
+  align-items: start;
+  padding-left: 10%;
+}
+@media (max-width: 480px) {
+  .contain-object {
+    width: 100%;
+  }
+  .contain-object .containing-text {
+    justify-content: center;
+    align-items: start;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    gap: 5px;
+  }
+  .contain-object .containing-text h1 {
+    font-size: 100%;
+  }
+  .contain-object .containing-text p {
+    font-size: 90%;
+  }
+}
+
+.logos-section {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  gap: 3%;
+}
+.logos-section .nikeDive {
+  background: #fe6849;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+  padding: 2% 3%;
+  border-radius: 20px;
+  gap: 9%;
+}
+.logos-section .nikeDive p {
+  font-size: 70%;
+}
+.logos-section .nikeDive img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120%;
+}
+.logos-section .logo {
+  width: 18%;
+  background: #232b36;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logos-section .logo img {
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 480px) {
+  .logos-section {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+.shoes-div {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7%;
+  gap: 4%;
+  background-color: #232b36;
+  border-radius: 20px;
+}
+.shoes-div .lastNav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 4%;
+  gap: 5px;
+}
+.shoes-div .lastNav p {
+  font-size: 100%;
+}
+.shoes-div .lastNav .tittle {
+  color: #fe6849;
+  font-weight: bolder;
+}
+.shoes-div .lastNav img {
+  width: 40%;
+}
+@media (max-width: 480px) {
+  .shoes-div {
+    width: 100%;
+    gap: 3%;
+    justify-content: space-between;
+    background: none;
+    margin-bottom: 10%;
+  }
+  .shoes-div .lastNav {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #232b36;
+    border-radius: 20px;
+  }
+  .shoes-div .lastNav img {
+    width: 80%;
+  }
+}
+
+footer {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -4%;
+  background: #232b36;
+  padding: 1% 3%;
+  border-radius: 20px;
+}
+footer .tach {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #90969e;
+  gap: 3%;
+  transition: all 0.3s;
+  padding: 1% 0%;
+}
+footer .tach:hover {
+  background: #fe6849;
+  color: wheat;
+  border-radius: 50%;
+}
+footer .tach p {
+  font-size: 100%;
+}
+footer .tach a i {
+  text-decoration: none;
+  color: #ccced0;
+  font-size: 100%;
+}
+@media (max-width: 480px) {
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+  }
+}
+
+.presentation {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, rgba(254, 103, 73, 0.2039215686), #1a1b20, rgba(254, 103, 73, 0.368627451));
+  position: relative;
+  background-size: cover;
+}
+.presentation .dividerTop {
+  width: 30vw;
+  height: 60vh;
+  background: #fe6849;
+  border-radius: 50%;
+  position: fixed;
+  right: -10%;
+  top: -20%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .presentation .dividerTop {
+    display: none;
+    width: 60vw;
+    height: 20vh;
+    border-radius: 50px;
+    background: linear-gradient(rgba(255, 255, 255, 0.156), rgb(0, 0, 0)), url(../img/l-nike.png);
+    background-size: cover;
+    background-position: center center;
+    right: 5%;
+    top: 8%;
+  }
+}
+.presentation .dividerDown {
+  width: 30vw;
+  height: 60vh;
+  background: #fe6849;
+  position: fixed;
+  left: -10%;
+  bottom: -20%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .presentation .dividerDown {
+    -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 80%, 20% 20%);
+            clip-path: polygon(0 40%, 100% 40%, 100% 80%, 20% 20%);
+    z-index: 1;
+  }
+}
+@media (max-width: 480px) {
+  .presentation {
+    flex-direction: column;
+  }
+}
+
+.mainContainerIndex {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+  gap: 2%;
+}
+.mainContainerIndex p {
+  font-size: 110%;
+}
+.mainContainerIndex h1 {
+  font-size: 200%;
+}
+.mainContainerIndex h1 span {
+  color: #fe6849;
+}
+.mainContainerIndex .shoes {
+  width: 79%;
+  padding-left: 10%;
+}
+@media (max-width: 480px) {
+  .mainContainerIndex {
+    width: 100%;
+    padding: 10px;
+  }
+  .mainContainerIndex .shoes {
+    width: 89%;
+  }
+  .mainContainerIndex h1 {
+    font-size: 240%;
+  }
+  .mainContainerIndex h1 span {
+    color: #fe6849;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContainertheIajust {
+    align-items: start;
+    justify-content: start;
+    padding: 0% 10%;
+  }
+  .mainContainertheIajust p {
+    font-size: 100%;
+    font-weight: bolder;
+  }
+}
+
+.thisDivIsHidenInBigScreen {
+  display: none;
+}
+@media (max-width: 480px) {
+  .thisDivIsHidenInBigScreen {
+    display: block;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 6%;
+    background-attachment: fixed;
+  }
+  .thisDivIsHidenInBigScreen div {
+    width: 20%;
+    height: 10%;
+    background: linear-gradient(tomato, white, tomato);
+    border-radius: 25px;
+    margin-left: 15%;
+  }
+  .thisDivIsHidenInBigScreen a {
+    padding: 4% 12%;
+    background: #fe6849;
+    border-radius: 20px;
+  }
+  .thisDivIsHidenInBigScreen a button {
+    color: #ccced0;
+    font-size: 120%;
+    background: none;
+    border: none;
+    font-weight: bolder;
+  }
+}
+
+.storeContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+.storeContainer .reseach-space {
+  width: 35%;
+  padding: 1% 3%;
+  background: linear-gradient(60deg, black, rgba(255, 255, 255, 0.378), black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 20px;
+  margin-bottom: 5%;
+}
+.storeContainer .reseach-space .class-in-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.storeContainer .reseach-space input {
+  background: none;
+  border: none;
+  color: #ccced0;
+}
+.storeContainer .shoes-store {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+.storeContainer .shoes-store .buy-shoes {
+  width: 15%;
+  height: 450%;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  background: #232b36;
+  border-radius: 10px;
+  position: relative;
+}
+.storeContainer .shoes-store .buy-shoes p {
+  width: 100%;
+}
+.storeContainer .shoes-store .buy-shoes div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.storeContainer .shoes-store .buy-shoes div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0%;
+}
+@media (max-width: 480px) {
+  .storeContainer {
+    gap: 0rem;
+  }
+  .storeContainer .reseach-space {
+    width: 100%;
+    padding: 3% 0%;
+    margin-bottom: -5%;
+  }
+  .storeContainer .reseach-space .class-in-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .storeContainer .reseach-space input {
+    background: none;
+    border: none;
+    color: #ccced0;
+    width: 30%;
+  }
+  .storeContainer .shoes-store {
+    height: 280%;
+    padding: 10%;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .storeContainer .shoes-store .buy-shoes {
+    padding-bottom: 5%;
+    padding-right: 2%;
+    padding-left: 5%;
+    padding-top: 2%;
+    width: 45%;
+    height: 33%;
+    background: #232b36;
+    border-radius: 10px;
+  }
+  .storeContainer .shoes-store .buy-shoes div img {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) and (max-width: 320px) {
+  .storeContainer .shoes-store .buy-shoes div img {
+    width: 60%;
+  }
+}/*# sourceMappingURL=style.css.map */

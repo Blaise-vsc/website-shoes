@@ -1,0 +1,118 @@
+.storeContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  .reseach-space {
+    width: 35%;
+    padding: 1% 3%;
+    background: linear-gradient(
+      60deg,
+      black,
+      rgba(255, 255, 255, 0.378),
+      black
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    .class-in-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    input {
+      background: none;
+      border: none;
+      color: $text-color;
+    }
+  }
+  .shoes-store {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-wrap: wrap;
+    gap: 2%;
+    .buy-shoes {
+      width: 15%;
+      height: 450%;
+      display: flex;
+      align-items: start;
+      justify-content: end;
+      flex-direction: column;
+      background: $sec-color;
+      border-radius: 10px;
+      position: relative;
+      p {
+        width: 100%;
+      }
+      div {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0%;
+        }
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    gap: 0rem;
+    .reseach-space {
+      width: 100%;
+      padding: 3% 0%;
+      margin-bottom: -5%;
+
+      .class-in-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      input {
+        background: none;
+        border: none;
+        color: $text-color;
+        width: 30%;
+      }
+    }
+    .shoes-store {
+      height: 280%;
+      padding: 10%;
+      flex-wrap: wrap;
+      gap: 5%;
+
+      .buy-shoes {
+        padding-bottom: 5%;
+        padding-right: 2%;
+        padding-left: 5%;
+        padding-top: 2%;
+        width: 45%;
+        height: 33%;
+        background: $sec-color;
+        border-radius: 10px;
+        div {
+          img {
+            width: 90%;
+            @media (max-width: 320px) {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
