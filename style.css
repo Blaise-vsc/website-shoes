@@ -85,6 +85,10 @@ header .sec-hder-b i {
   display: flex;
   justify-content: space-between;
 }
+.firstSectionContainingTheForm .seeAll p {
+  text-decoration: none;
+  color: #90969e;
+}
 .firstSectionContainingTheForm i {
   font-size: 120%;
 }
@@ -127,6 +131,8 @@ header .sec-hder-b i {
 .secondSectionContainingTheForm .seeAll p {
   font-weight: bolder;
   font-size: 100%;
+  text-decoration: none;
+  color: #90969e;
 }
 @media (max-width: 480px) {
   .secondSectionContainingTheForm {
