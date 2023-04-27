@@ -472,7 +472,7 @@ a i {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     bottom: 6%;
     left: 30%;
     background-attachment: fixed;
