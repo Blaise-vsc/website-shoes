@@ -10,6 +10,7 @@ body {
 }
 
 .nest {
+  opacity: 0%;
   // width: 20%;
   text-decoration: none;
   color: $tach-color;
@@ -19,6 +20,9 @@ body {
   text-decoration: none;
   i {
     font-size: 120%;
+  }
+  @media (max-width: 480px) {
+    opacity: 100%;
   }
 }
 

@@ -16,6 +16,7 @@ body {
 }
 
 .nest {
+  opacity: 0%;
   text-decoration: none;
   color: #90969e;
   display: flex;
@@ -25,6 +26,11 @@ body {
 }
 .nest i {
   font-size: 120%;
+}
+@media (max-width: 480px) {
+  .nest {
+    opacity: 100%;
+  }
 }
 
 .parent-container {
