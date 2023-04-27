@@ -473,7 +473,9 @@ a i {
     justify-content: space-between;
     position: absolute;
     bottom: 6%;
+    left: 30%;
     background-attachment: fixed;
+    z-index: 1000;
   }
   .thisDivIsHidenInBigScreen div {
     width: 20%;
@@ -482,18 +484,24 @@ a i {
     border-radius: 25px;
     margin-left: 15%;
   }
+  .thisDivIsHidenInBigScreen div img {
+    width: 100%;
+  }
   .thisDivIsHidenInBigScreen a {
     padding: 4% 12%;
     background: #fe6849;
     border-radius: 20px;
   }
-  .thisDivIsHidenInBigScreen a button {
+  .thisDivIsHidenInBigScreen a .logo {
     color: #ccced0;
     font-size: 120%;
     background: none;
     border: none;
     font-weight: bolder;
     cursor: pointer;
+  }
+  .thisDivIsHidenInBigScreen a .logo img {
+    display: none;
   }
 }
 
