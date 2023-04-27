@@ -12,10 +12,11 @@ body {
 .nest {
   // width: 20%;
   text-decoration: none;
-  // color: $tach-color;
+  color: $tach-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .parent-container {

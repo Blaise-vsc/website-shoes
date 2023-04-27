@@ -17,9 +17,11 @@ body {
 
 .nest {
   text-decoration: none;
+  color: #90969e;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .parent-container {
