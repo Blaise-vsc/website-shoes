@@ -23,6 +23,9 @@ body {
   justify-content: space-between;
   text-decoration: none;
 }
+.nest i {
+  font-size: 120%;
+}
 
 .parent-container {
   width: 100%;
