@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -16,7 +17,10 @@ body {
 }
 
 .nest {
-  opacity: 0%;
+  opacity: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: #90969e;
   display: flex;
@@ -273,7 +277,7 @@ header .sec-hder-b i {
   border-radius: 20px;
 }
 .shoes-div .lastNav {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
